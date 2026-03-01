@@ -1,9 +1,6 @@
 /* ============================================
    ARDENIUS DEN CSS — Dark Gothic Theme
    Dark Reds & Golds | King Ardenius
-   ============================================
-   Host this file on GitHub Pages or similar,
-   then link it in your territory description.
    ============================================ */
 
 /* === FONTS === */
@@ -80,15 +77,6 @@ div.container.main,
 
 .breadcrumb a:hover {
     color: #c9a84c !important;
-}
-
-.breadcrumb::after {
-    content: "Ardenius Den Theme" !important;
-    position: absolute !important;
-    right: 15px !important;
-    font-size: 10px !important;
-    color: rgba(139, 0, 0, 0.3) !important;
-    font-style: italic !important;
 }
 
 /* === SIDEBAR / PANELS === */
@@ -207,9 +195,19 @@ a:active {
     background: linear-gradient(90deg, #3a0808 0%, #6b0000 100%) !important;
 }
 
-/* === BUTTONS === */
+/* === ALL BUTTONS — catch-all === */
 .btn,
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-sm,
+.btn-xs,
+.btn-lg,
 input[type="submit"],
+input[type="button"],
 button {
     background: linear-gradient(180deg, #2a0a0e 0%, #1a0508 100%) !important;
     border: 1px solid rgba(139, 0, 0, 0.4) !important;
@@ -219,11 +217,23 @@ button {
     text-transform: uppercase !important;
     font-size: 11px !important;
     letter-spacing: 1px !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
     transition: all 0.3s ease !important;
 }
 
 .btn:hover,
+.btn-default:hover,
+.btn-primary:hover,
+.btn-success:hover,
+.btn-info:hover,
+.btn-warning:hover,
+.btn-danger:hover,
+.btn-sm:hover,
+.btn-xs:hover,
+.btn-lg:hover,
 input[type="submit"]:hover,
+input[type="button"]:hover,
 button:hover {
     background: linear-gradient(180deg, #3a0f14 0%, #2a0a0e 100%) !important;
     border-color: rgba(201, 168, 76, 0.5) !important;
@@ -231,9 +241,77 @@ button:hover {
     box-shadow: 0 0 10px rgba(139, 0, 0, 0.3) !important;
 }
 
-.btn-primary {
-    background: linear-gradient(180deg, #4a1015 0%, #2a0508 100%) !important;
-    border-color: rgba(139, 0, 0, 0.5) !important;
+.btn:active,
+.btn-default:active,
+.btn:focus,
+.btn-default:focus {
+    background: linear-gradient(180deg, #2a0a0e 0%, #1a0508 100%) !important;
+    border-color: rgba(139, 0, 0, 0.4) !important;
+    color: #c9a84c !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* === CHATBOX SPECIFIC === */
+#chatHeader,
+.chatHeader,
+#chatbox .btn,
+.chatbox .btn,
+.chat_box .btn,
+[id*="chat"] .btn,
+[class*="chat"] .btn,
+a.btn[href*="chat"],
+a[href*="chatroom"],
+a[href*="chat_room"] {
+    background: linear-gradient(180deg, #2a0a0e 0%, #1a0508 100%) !important;
+    border: 1px solid rgba(139, 0, 0, 0.4) !important;
+    border-radius: 0 !important;
+    color: #c9a84c !important;
+    font-family: "Cinzel", serif !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    padding: 4px 12px !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+}
+
+#chatHeader:hover,
+.chatHeader:hover,
+#chatbox .btn:hover,
+.chatbox .btn:hover,
+a.btn[href*="chat"]:hover,
+a[href*="chatroom"]:hover {
+    background: linear-gradient(180deg, #3a0f14 0%, #2a0a0e 100%) !important;
+    border-color: rgba(201, 168, 76, 0.5) !important;
+    color: #d4af37 !important;
+}
+
+/* Chat area */
+.chat_light,
+#chatMessages .chat_light {
+    background: rgba(20, 10, 12, 0.4) !important;
+    border-color: rgba(139, 0, 0, 0.1) !important;
+    color: #c4b5a0 !important;
+}
+
+.chat_dark,
+#chatMessages .chat_dark {
+    background: rgba(30, 12, 16, 0.4) !important;
+    border-color: rgba(139, 0, 0, 0.1) !important;
+    color: #c4b5a0 !important;
+}
+
+#chatbox h4,
+.chatbox h4,
+[id*="chat"] h4,
+[class*="chat"] h4 {
+    background: linear-gradient(180deg, rgba(60, 10, 15, 0.6) 0%, rgba(30, 5, 8, 0.8) 100%) !important;
+    color: #c9a84c !important;
+    font-family: "Cinzel", serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.3) !important;
 }
 
 /* === INPUT FIELDS === */
@@ -264,19 +342,6 @@ textarea:focus,
 div#lion_image > div {
     background-color: transparent !important;
     border: none !important;
-}
-
-/* === CHAT STYLING === */
-.chat_light {
-    background: rgba(20, 10, 12, 0.4) !important;
-    border-color: rgba(139, 0, 0, 0.1) !important;
-    color: #c4b5a0 !important;
-}
-
-.chat_dark {
-    background: rgba(30, 12, 16, 0.4) !important;
-    border-color: rgba(139, 0, 0, 0.1) !important;
-    color: #c4b5a0 !important;
 }
 
 /* === ALERTS / WELLS === */
@@ -314,7 +379,7 @@ div#lion_image > div {
     background: linear-gradient(180deg, #5c1520 0%, #3a0f14 100%) !important;
 }
 
-/* === HEADINGS (inside territory) === */
+/* === HEADINGS === */
 h1, h2, h3, h4, h5, h6 {
     color: #c9a84c !important;
     font-family: "Cinzel Decorative", "Cinzel", serif !important;
@@ -327,7 +392,6 @@ h1, h2, h3, h4, h5, h6 {
    TERRITORY DESCRIPTION BOX LAYOUT
    ============================================ */
 
-/* --- Main Wrapper --- */
 .ard-territory {
     width: 700px;
     margin: 10px auto;
@@ -336,7 +400,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.65;
 }
 
-/* --- Section Title (large decorative headers) --- */
 .ard-title {
     text-align: center;
     padding: 18px 10px 14px;
@@ -359,7 +422,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-/* --- Subtitle / Section subheader --- */
 .ard-subtitle {
     text-align: center;
     font-family: "Cinzel", serif;
@@ -370,7 +432,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 2px 0 12px;
 }
 
-/* --- Divider Line --- */
 .ard-divider {
     width: 60%;
     margin: 8px auto;
@@ -387,7 +448,6 @@ h1, h2, h3, h4, h5, h6 {
     border: none;
 }
 
-/* --- Two-Column Container --- */
 .ard-row {
     display: flex;
     justify-content: center;
@@ -395,7 +455,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 6px 0;
 }
 
-/* --- Content Boxes --- */
 .ard-box {
     background: rgba(15, 8, 10, 0.85);
     border: 1px solid rgba(139, 0, 0, 0.25);
@@ -414,14 +473,12 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.2), transparent);
 }
 
-/* Half-width box (for two-column layout) */
 .ard-box-half {
     width: 345px;
     height: 250px;
     overflow-y: auto;
 }
 
-/* Full-width box */
 .ard-box-full {
     width: 100%;
     min-height: 80px;
@@ -429,13 +486,11 @@ h1, h2, h3, h4, h5, h6 {
     overflow-y: auto;
 }
 
-/* Compact info box (no scroll) */
 .ard-box-compact {
     width: 100%;
     text-align: center;
 }
 
-/* --- Box Header --- */
 .ard-box-header {
     font-family: "Cinzel", serif;
     font-size: 13px;
@@ -450,7 +505,6 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Text Styles --- */
 .ard-text {
     font-size: 13px;
     color: #b0a090;
@@ -477,7 +531,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #8b3030;
 }
 
-/* --- List Styling --- */
 .ard-list {
     list-style: none;
     padding: 0;
@@ -500,7 +553,6 @@ h1, h2, h3, h4, h5, h6 {
     top: 7px;
 }
 
-/* --- Quote / Lore Block --- */
 .ard-quote {
     border-left: 2px solid rgba(139, 0, 0, 0.4);
     padding: 8px 14px;
@@ -511,7 +563,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
 }
 
-/* --- Footer / Credit --- */
 .ard-footer {
     text-align: center;
     margin-top: 12px;
@@ -523,14 +574,12 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-/* --- Hover Glow Effect on Boxes --- */
 .ard-box:hover {
     border-color: rgba(139, 0, 0, 0.35);
     box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 2px 12px rgba(139, 0, 0, 0.1);
     transition: all 0.4s ease;
 }
 
-/* --- Scrollbar inside boxes --- */
 .ard-box::-webkit-scrollbar {
     width: 6px !important;
 }
@@ -548,7 +597,6 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(139, 0, 0, 0.5) !important;
 }
 
-/* --- Status Tag (for WIP etc) --- */
 .ard-tag {
     display: inline-block;
     background: rgba(139, 0, 0, 0.2);
@@ -562,7 +610,6 @@ h1, h2, h3, h4, h5, h6 {
     margin: 2px;
 }
 
-/* --- Decorative Crown/Ornament --- */
 .ard-ornament {
     text-align: center;
     font-size: 16px;
@@ -573,7 +620,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ============================================
    BACKWARD COMPAT: .boxcontainer / .Box1-3
-   (so your old code still works too)
    ============================================ */
 .boxcontainer {
     background: none !important;
