@@ -1,0 +1,627 @@
+/* ============================================
+   ARDENIUS DEN CSS — Dark Gothic Theme
+   Dark Reds & Golds | King Ardenius
+   ============================================
+   Host this file on GitHub Pages or similar,
+   then link it in your territory description.
+   ============================================ */
+
+/* === FONTS === */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* === PAGE BACKGROUND === */
+body {
+    background: #0a0506 !important;
+    background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(80, 10, 10, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(80, 10, 10, 0.10) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 0%, rgba(120, 20, 20, 0.08) 0%, transparent 40%) !important;
+    background-attachment: fixed !important;
+    color: #c4b5a0 !important;
+    font-family: "Cormorant Garamond", "Georgia", serif !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* === MAIN CONTENT AREA === */
+div.container.main,
+.container.main {
+    background: rgba(12, 6, 8, 0.92) !important;
+    border: 1px solid rgba(139, 0, 0, 0.25) !important;
+    border-top: none !important;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6), inset 0 0 80px rgba(0, 0, 0, 0.3) !important;
+    color: #c4b5a0 !important;
+}
+
+.col-md-9 {
+    background: transparent !important;
+    color: #c4b5a0 !important;
+}
+
+/* === NAVIGATION BAR === */
+.topbar,
+.navbar,
+.navbar-default {
+    background: linear-gradient(180deg, #120608 0%, #0a0405 100%) !important;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.4) !important;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar a {
+    color: #8a7560 !important;
+    font-family: "Cinzel", serif !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    transition: color 0.3s ease !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar a:hover {
+    color: #c9a84c !important;
+    text-shadow: 0 0 8px rgba(201, 168, 76, 0.3) !important;
+}
+
+/* === BREADCRUMB === */
+.breadcrumb {
+    background: rgba(15, 8, 10, 0.8) !important;
+    border: 1px solid rgba(139, 0, 0, 0.15) !important;
+    border-radius: 0 !important;
+    color: #6b5d50 !important;
+    font-family: "Cinzel", serif !important;
+    font-size: 11px !important;
+    letter-spacing: 0.5px !important;
+}
+
+.breadcrumb a {
+    color: #8b4040 !important;
+}
+
+.breadcrumb a:hover {
+    color: #c9a84c !important;
+}
+
+.breadcrumb::after {
+    content: "Ardenius Den Theme" !important;
+    position: absolute !important;
+    right: 15px !important;
+    font-size: 10px !important;
+    color: rgba(139, 0, 0, 0.3) !important;
+    font-style: italic !important;
+}
+
+/* === SIDEBAR / PANELS === */
+.sidebar,
+.panel,
+.panel-default {
+    background: rgba(15, 8, 10, 0.9) !important;
+    border: 1px solid rgba(139, 0, 0, 0.2) !important;
+    border-radius: 0 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) !important;
+    color: #c4b5a0 !important;
+}
+
+.panel-heading,
+.panel-default > .panel-heading {
+    background: linear-gradient(180deg, rgba(60, 10, 15, 0.6) 0%, rgba(30, 5, 8, 0.8) 100%) !important;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.3) !important;
+    border-radius: 0 !important;
+    color: #c9a84c !important;
+    font-family: "Cinzel", serif !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    letter-spacing: 1.5px !important;
+}
+
+.panel-body {
+    background: transparent !important;
+    color: #c4b5a0 !important;
+}
+
+/* === TABLES === */
+.table,
+table {
+    color: #c4b5a0 !important;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > td,
+.table td,
+.table th,
+td, th {
+    border-color: rgba(139, 0, 0, 0.15) !important;
+    color: #c4b5a0 !important;
+    background: transparent !important;
+}
+
+td.right,
+td.left,
+td.top,
+td.bottom {
+    background: rgba(15, 8, 10, 0.5) !important;
+    border-color: rgba(139, 0, 0, 0.2) !important;
+    color: #c4b5a0 !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: rgba(60, 10, 15, 0.15) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+    background-color: rgba(15, 8, 10, 0.3) !important;
+}
+
+td.left.b,
+td.right {
+    background: rgba(20, 10, 12, 0.6) !important;
+}
+
+/* === LINKS === */
+a:link,
+a {
+    color: #8b3030 !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+a:visited {
+    color: #6b2525 !important;
+}
+
+a:hover {
+    color: #c9a84c !important;
+    text-shadow: 0 0 6px rgba(201, 168, 76, 0.2) !important;
+    text-decoration: none !important;
+}
+
+a:active {
+    color: #d4af37 !important;
+}
+
+/* === PROGRESS / STAT BARS === */
+.progress {
+    background-color: rgba(15, 8, 10, 0.8) !important;
+    border: 1px solid rgba(139, 0, 0, 0.2) !important;
+    border-radius: 0 !important;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.4) !important;
+    height: 18px !important;
+}
+
+.progress-bar,
+.progress-bar-success {
+    background: linear-gradient(90deg, #5c1010 0%, #8b0000 50%, #a01020 100%) !important;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.2), 0 0 8px rgba(139, 0, 0, 0.3) !important;
+    border-radius: 0 !important;
+}
+
+.progress-bar-info {
+    background: linear-gradient(90deg, #3a2008 0%, #7a5520 50%, #c9a84c 100%) !important;
+}
+
+.progress-bar-warning {
+    background: linear-gradient(90deg, #5c1010 0%, #8b2020 100%) !important;
+}
+
+.progress-bar-danger {
+    background: linear-gradient(90deg, #3a0808 0%, #6b0000 100%) !important;
+}
+
+/* === BUTTONS === */
+.btn,
+input[type="submit"],
+button {
+    background: linear-gradient(180deg, #2a0a0e 0%, #1a0508 100%) !important;
+    border: 1px solid rgba(139, 0, 0, 0.4) !important;
+    border-radius: 0 !important;
+    color: #c9a84c !important;
+    font-family: "Cinzel", serif !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn:hover,
+input[type="submit"]:hover,
+button:hover {
+    background: linear-gradient(180deg, #3a0f14 0%, #2a0a0e 100%) !important;
+    border-color: rgba(201, 168, 76, 0.5) !important;
+    color: #d4af37 !important;
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.3) !important;
+}
+
+.btn-primary {
+    background: linear-gradient(180deg, #4a1015 0%, #2a0508 100%) !important;
+    border-color: rgba(139, 0, 0, 0.5) !important;
+}
+
+/* === INPUT FIELDS === */
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select,
+textarea,
+.form-control {
+    background: rgba(10, 5, 6, 0.9) !important;
+    border: 1px solid rgba(139, 0, 0, 0.25) !important;
+    border-radius: 0 !important;
+    color: #c4b5a0 !important;
+    font-family: "Cormorant Garamond", serif !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+.form-control:focus {
+    border-color: rgba(201, 168, 76, 0.4) !important;
+    box-shadow: 0 0 8px rgba(139, 0, 0, 0.2) !important;
+    outline: none !important;
+}
+
+/* === LION IMAGE AREA === */
+div#lion_image > div {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* === CHAT STYLING === */
+.chat_light {
+    background: rgba(20, 10, 12, 0.4) !important;
+    border-color: rgba(139, 0, 0, 0.1) !important;
+    color: #c4b5a0 !important;
+}
+
+.chat_dark {
+    background: rgba(30, 12, 16, 0.4) !important;
+    border-color: rgba(139, 0, 0, 0.1) !important;
+    color: #c4b5a0 !important;
+}
+
+/* === ALERTS / WELLS === */
+.well {
+    background: rgba(15, 8, 10, 0.7) !important;
+    border: 1px solid rgba(139, 0, 0, 0.2) !important;
+    border-radius: 0 !important;
+    color: #c4b5a0 !important;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+}
+
+.alert {
+    background: rgba(60, 10, 15, 0.4) !important;
+    border: 1px solid rgba(139, 0, 0, 0.3) !important;
+    border-radius: 0 !important;
+    color: #c4b5a0 !important;
+}
+
+/* === CUSTOM SCROLLBAR === */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0506 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3a0f14 0%, #1a0508 100%) !important;
+    border: 1px solid rgba(139, 0, 0, 0.3) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #5c1520 0%, #3a0f14 100%) !important;
+}
+
+/* === HEADINGS (inside territory) === */
+h1, h2, h3, h4, h5, h6 {
+    color: #c9a84c !important;
+    font-family: "Cinzel Decorative", "Cinzel", serif !important;
+    font-weight: 700 !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+}
+
+/* ============================================
+   TERRITORY DESCRIPTION BOX LAYOUT
+   ============================================ */
+
+/* --- Main Wrapper --- */
+.ard-territory {
+    width: 700px;
+    margin: 10px auto;
+    font-family: "Cormorant Garamond", "Georgia", serif;
+    color: #c4b5a0;
+    line-height: 1.65;
+}
+
+/* --- Section Title (large decorative headers) --- */
+.ard-title {
+    text-align: center;
+    padding: 18px 10px 14px;
+    margin-bottom: 0;
+    font-family: "Cinzel Decorative", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #c9a84c;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(139, 0, 0, 0.4), 0 2px 4px rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.ard-title::before,
+.ard-title::after {
+    content: "—";
+    margin: 0 12px;
+    color: #8b0000;
+    font-weight: 400;
+}
+
+/* --- Subtitle / Section subheader --- */
+.ard-subtitle {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    font-size: 11px;
+    color: #6b5040;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 2px 0 12px;
+}
+
+/* --- Divider Line --- */
+.ard-divider {
+    width: 60%;
+    margin: 8px auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #8b0000 30%, #c9a84c 50%, #8b0000 70%, transparent 100%);
+    border: none;
+}
+
+.ard-divider-full {
+    width: 100%;
+    margin: 15px 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(139, 0, 0, 0.4) 20%, rgba(139, 0, 0, 0.4) 80%, transparent 100%);
+    border: none;
+}
+
+/* --- Two-Column Container --- */
+.ard-row {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 6px 0;
+}
+
+/* --- Content Boxes --- */
+.ard-box {
+    background: rgba(15, 8, 10, 0.85);
+    border: 1px solid rgba(139, 0, 0, 0.25);
+    padding: 14px 16px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.ard-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(201, 168, 76, 0.2), transparent);
+}
+
+/* Half-width box (for two-column layout) */
+.ard-box-half {
+    width: 345px;
+    height: 250px;
+    overflow-y: auto;
+}
+
+/* Full-width box */
+.ard-box-full {
+    width: 100%;
+    min-height: 80px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/* Compact info box (no scroll) */
+.ard-box-compact {
+    width: 100%;
+    text-align: center;
+}
+
+/* --- Box Header --- */
+.ard-box-header {
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #c9a84c;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.2);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Text Styles --- */
+.ard-text {
+    font-size: 13px;
+    color: #b0a090;
+    line-height: 1.7;
+}
+
+.ard-text-sm {
+    font-size: 11.5px;
+    color: #8a7a68;
+    line-height: 1.6;
+}
+
+.ard-text-italic {
+    font-style: italic;
+    color: #8a7560;
+}
+
+.ard-text-accent {
+    color: #c9a84c;
+    font-weight: 600;
+}
+
+.ard-text-red {
+    color: #8b3030;
+}
+
+/* --- List Styling --- */
+.ard-list {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.ard-list li {
+    padding: 3px 0 3px 16px;
+    position: relative;
+    font-size: 12.5px;
+    color: #b0a090;
+}
+
+.ard-list li::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    color: #8b0000;
+    font-size: 7px;
+    top: 7px;
+}
+
+/* --- Quote / Lore Block --- */
+.ard-quote {
+    border-left: 2px solid rgba(139, 0, 0, 0.4);
+    padding: 8px 14px;
+    margin: 10px 0;
+    background: rgba(60, 10, 15, 0.15);
+    font-style: italic;
+    color: #8a7a68;
+    font-size: 13px;
+}
+
+/* --- Footer / Credit --- */
+.ard-footer {
+    text-align: center;
+    margin-top: 12px;
+    padding-top: 8px;
+    font-family: "Cinzel", serif;
+    font-size: 9px;
+    color: rgba(139, 0, 0, 0.25);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Hover Glow Effect on Boxes --- */
+.ard-box:hover {
+    border-color: rgba(139, 0, 0, 0.35);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3), 0 2px 12px rgba(139, 0, 0, 0.1);
+    transition: all 0.4s ease;
+}
+
+/* --- Scrollbar inside boxes --- */
+.ard-box::-webkit-scrollbar {
+    width: 6px !important;
+}
+
+.ard-box::-webkit-scrollbar-track {
+    background: rgba(10, 5, 6, 0.5) !important;
+}
+
+.ard-box::-webkit-scrollbar-thumb {
+    background: rgba(139, 0, 0, 0.3) !important;
+    border-radius: 0 !important;
+}
+
+.ard-box::-webkit-scrollbar-thumb:hover {
+    background: rgba(139, 0, 0, 0.5) !important;
+}
+
+/* --- Status Tag (for WIP etc) --- */
+.ard-tag {
+    display: inline-block;
+    background: rgba(139, 0, 0, 0.2);
+    border: 1px solid rgba(139, 0, 0, 0.3);
+    color: #8b3030;
+    font-family: "Cinzel", serif;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    margin: 2px;
+}
+
+/* --- Decorative Crown/Ornament --- */
+.ard-ornament {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(139, 0, 0, 0.35);
+    letter-spacing: 8px;
+    margin: 5px 0;
+}
+
+/* ============================================
+   BACKWARD COMPAT: .boxcontainer / .Box1-3
+   (so your old code still works too)
+   ============================================ */
+.boxcontainer {
+    background: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.Box1 {
+    float: left;
+    background: rgba(15, 8, 10, 0.85);
+    width: 345px;
+    height: 250px;
+    border: 1px solid rgba(139, 0, 0, 0.25);
+    padding: 14px 16px;
+    overflow: auto;
+    color: #c4b5a0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.Box2 {
+    float: right;
+    background: rgba(15, 8, 10, 0.85);
+    width: 345px;
+    height: 250px;
+    border: 1px solid rgba(139, 0, 0, 0.25);
+    padding: 14px 16px;
+    overflow: auto;
+    color: #c4b5a0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.Box3 {
+    background: rgba(15, 8, 10, 0.85);
+    width: 100%;
+    border: 1px solid rgba(139, 0, 0, 0.25);
+    padding: 14px 16px;
+    overflow: auto;
+    color: #c4b5a0;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 13px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.3);
+}
